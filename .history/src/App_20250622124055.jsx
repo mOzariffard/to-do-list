@@ -1,12 +1,16 @@
 import React from 'react'
 import LiveBackground from './components/LiveBackGround'
-import ToDoListForm from './components/ToDoListForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full h-screen'>
       <LiveBackground/>
-      <ToDoListForm/>
+
+      <div className='flex flex-col items-center relative z-10'>
+        <h1 className='text-white'>
+
+        </h1>
+      </div>
     </div>
   )
 }

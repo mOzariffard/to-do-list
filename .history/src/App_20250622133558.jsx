@@ -4,9 +4,13 @@ import ToDoListForm from './components/ToDoListForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full h-screen'>
       <LiveBackground/>
-      <ToDoListForm/>
+      <div className='flex flex-col items-center relative z-10'>
+        <div className='absolute '>
+        <ToDoListForm/>
+        </div>
+      </div>
     </div>
   )
 }

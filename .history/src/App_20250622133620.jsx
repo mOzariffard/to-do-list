@@ -4,7 +4,7 @@ import ToDoListForm from './components/ToDoListForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full h-screen'>
       <LiveBackground/>
       <ToDoListForm/>
     </div>

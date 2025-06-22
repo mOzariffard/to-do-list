@@ -1,12 +1,11 @@
 import React from 'react'
 import LiveBackground from './components/LiveBackGround'
-import ToDoListForm from './components/ToDoListForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full h-screen'>
       <LiveBackground/>
-      <ToDoListForm/>
+      <h1 className='relative'> hello world</h1>
     </div>
   )
 }

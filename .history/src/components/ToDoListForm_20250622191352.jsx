@@ -10,7 +10,7 @@ const ToDoListForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        
         if (input.trim()) {
             console.log('Todo added:', input);
             props.onSubmit({
@@ -25,14 +25,16 @@ const ToDoListForm = (props) => {
         <div>
             <div className="bg-white text-white p-4 rounded-t-lg shadow-lg">
                 <form className="flex items-end" onSubmit={handleSubmit}>
-                <WaveInput
-                  type="text"
-                  label="Add a To Do"
-                  value={input}
-                  onChange={handleChange}
-                  required
+                    <WaveInput
+                        type="text"
+                        label="Add a To Do"
+                        name="text"
+                        value={input}
+                        onChange={handleChange}
+                        required
                     />
                     <button
+                        type="submit"
                         className="bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 rounded p-2 ml-2 h-fit"
                     >
                         Add to the list

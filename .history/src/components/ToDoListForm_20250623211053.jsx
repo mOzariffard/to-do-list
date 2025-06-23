@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import WaveInput from './WaveInput';
 
-const ToDoListForm = (props) => {
+const ToDoListForm = () => {
     const [input, setInput] = useState('');
 
     const handleChange = (e) => {

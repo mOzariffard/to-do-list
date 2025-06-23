@@ -1,25 +1,24 @@
 @import "tailwindcss";
 
+
 .wave-group {
     position: relative;
-    margin-right: 8px;
   }
   .wave-group .input {
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 250px;
+    width: 200px;
     border: none;
     border-bottom: 1px solid #515151;
     background: transparent;
-    color: #374151;
   }
   .wave-group .input:focus {
     outline: none;
   }
   .wave-group .label {
-    color: #9CA3AF;
-    font-size: 16px;
+    color: #999;
+    font-size: 18px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -35,12 +34,12 @@
   .wave-group .input:valid ~ .label .label-char {
     transform: translateY(-20px);
     font-size: 14px;
-    color: #8B5CF6;
+    color: #696969;
   }
   .wave-group .bar {
     position: relative;
     display: block;
-    width: 250px;
+    width: 200px;
   }
   .wave-group .bar:before,
   .wave-group .bar:after {
@@ -49,8 +48,10 @@
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #8B5CF6;
+    background: ##696969;
     transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
   }
   .wave-group .bar:before {
     left: 50%;
@@ -62,4 +63,4 @@
   .wave-group .input:focus ~ .bar:after {
     width: 50%;
   }
-
+`}

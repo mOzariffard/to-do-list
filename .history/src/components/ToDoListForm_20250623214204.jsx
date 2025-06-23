@@ -32,9 +32,8 @@ const ToDoListForm = (props) => {
                   onChange={handleChange}
                   required
                     />
-                    
                     <button
-                        className="bg-gray-500 hover:bg-gray-700 focus:outline-1 focus:outline-offset-2 focus:outline-gray-500 active:bg-gray-800 rounded p-3  ml-25 h-fit "
+                        className="bg-gray-500 hover:bg-gray-700 focus:outline-1 focus:outline-offset-2 focus:outline-gray-500 active:bg-gray-800 rounded p-2 ml-2 h-fit gap-13 "
                     >
                     Add to the list
                     </button>

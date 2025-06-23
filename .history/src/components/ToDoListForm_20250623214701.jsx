@@ -34,7 +34,7 @@ const ToDoListForm = (props) => {
                     />
                     
                     <button
-                        className="bg-gray-500 hover:bg-gray-700 focus:outline-1 focus:outline-offset-2 focus:outline-gray-500 active:bg-gray-800 rounded p-3  ml-25 h-fit "
+                        className="bg-gray-500 hover:bg-gray-700 focus:outline-1 focus:outline-offset-2 focus:outline-gray-500 active:bg-gray-800 rounded p-10 ml-25 h-fit "
                     >
                     Add to the list
                     </button>

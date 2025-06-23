@@ -27,14 +27,13 @@ const ToDoListForm = (props) => {
                 <form className="flex items-end" onSubmit={handleSubmit}>
                 <WaveInput
                   type="text"
-                  label="Adda To Do"
+                  label="Add a To Do"
                   value={input}
                   onChange={handleChange}
                   required
                     />
-                    
                     <button
-                        className="bg-gray-500 hover:bg-gray-700 focus:outline-1 focus:outline-offset-2 focus:outline-gray-500 active:bg-gray-800 rounded p-3  ml-25 h-fit "
+                        className="bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 rounded p-2 ml-2 h-fit"
                     >
                     Add to the list
                     </button>

@@ -11,7 +11,6 @@ const ToDoList = () => {
 
     const newTodos=[todo, ...todos];
     setTodos(newTodos);
-    console.log(todo, ...todos);
     
   };
   return (

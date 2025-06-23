@@ -18,8 +18,8 @@ const ToDoList = () => {
   return (
     <>    
       <div className='brightness-200' />        
-    <div className='min-h-[550px] w-11/12 rounded-xl p-7 place-self-center flex items-center justify-center absolute inset-0 z-10'>
-        <div className='min-h-[800px] bg-white-20 backdrop-blur-lg p-20 rounded-lg shadow-lg absolute '>
+    <div className='min-h-[50px] w-11/12 rounded-xl p-7 place-self-center flex items-center justify-center absolute inset-0 z-10'>
+        <div className='bg-white-20 backdrop-blur-lg p-20 rounded-lg shadow-lg absolute '>
         {/* ---------------------TITLE--------------------- */}
           <div className='flex items-center  mb-20 gap-2  '>
              <img className='w-12' src="/images/to-do-icon.png" alt="to-do-icon" />
@@ -30,6 +30,9 @@ const ToDoList = () => {
       
       {/* ---------------------todo items--------------------- */}
       <div>
+        <TodoItems />
+        <TodoItems />
+        <TodoItems />
         <TodoItems />
       </div>
 

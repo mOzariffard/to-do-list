@@ -12,7 +12,6 @@ const ToDoList = () => {
 
     const newTodos=[todo, ...todos];
     setTodos(newTodos);
-
     console.log(todo, ...todos);
     
   };
@@ -31,9 +30,10 @@ const ToDoList = () => {
       
       {/* ---------------------todo items--------------------- */}
       <div className='flex flex-col'>
-        {todos.map((item , index)=>{
-          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} />
-        })}
+        <TodoItems />
+        <TodoItems />
+        <TodoItems />
+        <TodoItems />
 
       </div>
 

@@ -32,8 +32,12 @@ const ToDoList = () => {
       {/* ---------------------todo items--------------------- */}
       <div className='flex flex-col'>
         {todos.map((item , index)=>{
-          return <TodoItems key={index} text={item.text} id={item.id} isComplete={item.isComplete} />
-        })}
+          return <TodoItems key={index} text={item.text} />
+        })};
+
+        <TodoItems />
+        <TodoItems />
+        <TodoItems />
 
       </div>
 

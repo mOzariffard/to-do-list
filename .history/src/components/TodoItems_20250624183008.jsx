@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoItems = ({text, id , isComplete}) => {
+const TodoItems = ({text}) => {
   return (
     <div className=' bg-white flex flex-col items-start gap-3 p-3.5 rounded-none '>
         <div className=' flex items-center cusror-pointer '>

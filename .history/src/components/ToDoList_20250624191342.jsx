@@ -3,7 +3,7 @@ import ToDoListForm from './ToDoListForm'
 import TodoItems from './TodoItems';
 
 const ToDoList = () => {
-  const [todos, setTodos]=useState(localStorage.getItem('todoList')? JSON.parse(localStorage.getItem('todoList')): []);
+  const [todos, setTodos]=useState([]);
 
   const addToDo = (todo) => {
     if(!todo.text|| /^\s*$/.test(todo.text)){
@@ -12,6 +12,8 @@ const ToDoList = () => {
 
     const newTodos=[todo, ...todos];
     setTodos(newTodos);
+
+    console.log(todo, ...todos); 
   };
 
   const deleteTodo = (id) => {
@@ -20,23 +22,22 @@ const ToDoList = () => {
     });
   };
 
-  const toggle = (id) => {
-    setTodos((prevTodos) => {
-      return prevTodos.map((todo) => {
-        if (todo.id === id) {
+  const toggle= (id)=>{
+    setTodos((prevTodos)=>{
+      return prevTodos.map((todo)=>{
+        if(todo.id === id){
           return {
-            ...todo,
+            ...todo, 
             isComplete: !todo.isComplete
           };
+          return todo;
         }
-        return todo; // Ensure this is outside the `if` block but inside the `map` callback
-      })
-    })
+      });
+    });
   };
 
-  useEffect(()=>{
-    localStorage.setItem('todoList', JSON.stringify(todos));
-  },[todos])
+
+  useEffect(()=>{},[])
 
 
 

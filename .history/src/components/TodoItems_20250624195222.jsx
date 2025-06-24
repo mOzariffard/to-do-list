@@ -7,8 +7,7 @@ const TodoItems = ({text , id , isComplete , deleteTodo , toggle}) => {
 
             <img src={isComplete ? "/images/click.svg": "/images/radio.svg" } alt="tick" className='w-7' />
             
-            <p className={`text-slate-700 ml-4 text-[17px] decoration-slate-500 
-                        ${isComplete ? "line-through" : ""}`}>
+            <p className={`text-slate-700 ml-4 text-[17px] ${isComplete ? "line-through" : ""}`}>
             {text}
             </p> 
 

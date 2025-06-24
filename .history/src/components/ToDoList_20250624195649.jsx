@@ -3,7 +3,7 @@ import ToDoListForm from './ToDoListForm'
 import TodoItems from './TodoItems';
 
 const ToDoList = () => {
-  const [todos, setTodos]=useState(localStorage.getItem('todoList')? JSON.parse(localStorage.getItem('todoList')): []);
+  const [todos, setTodos]=useState([]);
 
   const addToDo = (todo) => {
     if(!todo.text|| /^\s*$/.test(todo.text)){

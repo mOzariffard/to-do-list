@@ -16,7 +16,7 @@ const ToDoListForm = (props) => {
             props.onSubmit({
                 id: Date.now(),
                 text: input,
-                isComplete: false,
+                isCompleted: false,
             });
             setInput('');
         }

@@ -47,7 +47,7 @@ const ToDoList = () => {
         <div className='min-h-[800px] bg-white-20 backdrop-blur-lg p-20 rounded-lg shadow-lg absolute '>
         {/* ---------------------TITLE--------------------- */}
           <div className='flex items-center  mb-20 gap-2  '>
-             <img className='w-12' src="/images/to-do-icon.png" alt="to-do-icon" />
+             <img className='w-12' src={`${import.meta.env.BASE_URL}images/to-do-icon.png`} alt="to-do-icon" />
               <h1 className='text-3xl text-white gap-2 font-semibold '> What is Your Plan for Today? </h1>
           </div>
         {/* ---------------------list-form---------------------*/}
